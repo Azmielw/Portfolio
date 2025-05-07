@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Lightbox Popup -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+  
+  <script>
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+  
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+  </script>
+  
+    <header class="main-header">
+        <div class="container header-flex">
+          <div class="logo-area">
+            <h1>Azmi's Portfolio</h1>
+            <p class="subtitle">Mobile Software Developer & Web Developer</p>
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      
+      
+  
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+      <img src="C:\Azmi\protofolio\Azmis photo.jpg" alt="Azmi Photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <div style="flex: 1;">
+        <p>
+          I'm a web developer with hands-on experience creating websites for startups, entrepreneurs, and small businesses. Whether you're looking for a sleek portfolio, a custom landing page, or a complete e-commerce platform, I’m here to turn your vision into reality.
+        </p>
+        <ul>
+          <li>Proficient in HTML5, CSS3, JavaScript, PHP, WordPress, and SEO</li>
+          <li>I take care of the entire process: from planning and design to coding, testing, and launch</li>
+          <li>I believe in keeping communication clear and consistent to make sure everything runs smoothly from start to finish</li>
+        </ul>
+        <p>
+          Ready to team up and build something exceptional for your brand? Let’s get started!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fas fa-code fa-3x" style="color:#222;"></i>
+        <h3>Front End Development</h3>
+        <p>Building responsive, modern, and interactive websites using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-pencil-ruler fa-3x" style="color:#222;"></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing user-friendly interfaces focused on smooth and engaging user experiences.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-sync-alt fa-3x" style="color:#222;"></i>
+        <h3>Website Redesign</h3>
+        <p>Refreshing outdated websites to align with modern standards and trends for better performance.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-mobile-alt fa-3x" style="color:#222;"></i>
+        <h3>Mobile & Software</h3>
+        <p>Developing mobile applications and software solutions tailored to client needs.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="C:\Azmi\protofolio\front end project.jpg" alt="Project 1" onclick="openLightbox(this.src)">
+        <h3>X Dine Out</h3>
+        <p>Front-End Development for a Restaurant Website
+
+            A modern, responsive restaurant website built with HTML5, CSS3, and JavaScript.
+            Features include a bold hero section, a sleek navigation bar, and a login form with social media integration.
+            Designed for fast, smooth user experience across all devices.
+            Objective: Create an engaging online presence that captures attention and drives customer interaction.
+            
+            </p>
+      </div>
+  
+      <div class="project-card">
+        <img src="C:\Azmi\protofolio\uxui.jpg" alt="Project 2" onclick="openLightbox(this.src)">
+        <h3> Modern Furniture Shopping Application</h3>
+        <p>Furniture Shop App – UX/UI Design
+
+            Designed a clean, user-friendly furniture shopping app covering onboarding, login, browsing, cart, and checkout screens.
+            Focused on intuitive navigation and smooth user experience.
+            
+            </p>
+      </div>
+  
+      <div class="project-card">
+        <img src="C:\Azmi\protofolio\news app 2.jpg" alt="Project 3" onclick="openLightbox(this.src)">
+        <h3>News App</h3>
+        <p>News App – Mobile Development
+
+            Developed a clean and responsive news application displaying articles by category (Science, Sports, Politics).
+            Focused on smooth navigation, real-time content updates, and a simple user experience.
+            
+            </p>
+      </div>
+      
+
+    </div>
+  
+    <!-- Lightbox Popup -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="">
+    </div>
+  </section>
+  
+  
+  
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <footer>
+    &copy; 2025 Azmi Shady Azmi Elwahedi - All rights reserved.
+  </footer>
+  
+</body>
+</html>
